@@ -1,0 +1,279 @@
+* {
+box-sizing: inherit;
+transition-property: all;
+transition-duration: .6s;
+transition-timing-function: ease;
+}
+
+html,
+body {
+box-sizing: border-box;
+height: 100%;
+width: 100%;
+}
+
+body {
+font-family: 'ubuntu', sans-serif;
+font-weight: 400;
+}
+#login{
+margin: 15px 20px 40px 15px;
+}
+#forgot{
+margin: 15px 15px 15px 20px;
+}
+#signup{
+margin: 15px 15px 15px 15px;
+}
+.abc{
+display: Inline-block;
+width: 20%;
+}
+.abc img{
+width: 100%;
+}
+.abcd{
+display: Inline-block;
+width: 30%;
+}
+.abcd img{
+width: 100%;
+}
+.dang_nhap{
+margin-bottom: 15px;
+}
+.dang_nhap input{
+width: 300px;
+height: 50px;
+text-align: center;
+border: 2px solid;
+border-radius: 25px;
+font-family: 'Ubuntu';
+font-size: 18px;
+}
+.pic{
+font-family: 'Ubuntu';
+height: 200px;
+width: 300px;
+background: #ffffff;
+font-size: 120%;
+border: 2px solid;
+border-radius: 25px;
+}
+.buttons {
+display: table;
+height: 100%;
+width: 100%;
+}
+
+.container {
+display: table-cell;
+padding: 1em;
+text-align: center;
+vertical-align: middle;
+}
+h3 {
+color: #fff;
+font-size: 1.25em;
+font-weight: 900;
+margin: 0 0 2em;
+}
+
+@media (min-width: 900px) {
+h3 {
+    font-size: 5.25em;
+    margin: 0 0 1em;
+}
+}
+h1 {
+color: #fff;
+font-size: 1.25em;
+font-weight: 900;
+margin: 0 0 2em;
+}
+@media (min-width: 450px) {
+h1 {
+    font-size: 1.3em;
+}
+}
+
+@media (min-width: 900px) {
+h1 {
+    font-size: 5.25em;
+    margin: 0 0 1em;
+}
+}
+
+.btn {
+color: #fff;
+cursor: pointer;
+display: block;
+font-size: 16px;
+font-weight: 400;
+line-height: 45px;
+margin: 15px 15px 15px 15px;
+max-width: 160px;
+position: relative;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+width: 100%;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+@media (min-width: 400px) {
+.btn {
+    display: inline-block;
+    margin-right: 2.5em;
+}
+.btn:nth-of-type(even) {
+    margin-right: 0;
+}
+}
+@media (min-width: 600px) {
+.btn:nth-of-type(even) {
+    margin-right: 2.5em;
+}
+.btn:nth-of-type(5) {
+    margin-right: 0;
+}
+}
+.btn:hover {
+text-decoration: none;
+}
+
+.footer-bar
+{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #111;
+    border-top: 1px solid #E62600;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer-bar .article-wrapper{
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    float: left;
+    margin-left: 10%;
+}
+.footer-bar .article-link a, .footer-bar .article-link a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+.site-link a, .site-link a:visited{
+    color: #888;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    float: right;
+    margin-right: 10%;
+    text-decoration: none;
+}
+.site-link a:hover{
+    color: #E62600;
+}
+h3 {
+color: #fff;
+font-weight: 900;
+margin: 0 0 2em;
+}
+@media (min-width: 900px) {
+h3 {
+    margin: 0 0 1em;
+}
+}
+body{
+background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Qif3nl0/high-definition-animated-background-loop-of-white-fluffy-clouds-moving-over-a-blue-sky_xkp7hted__F0000.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size:cover;
+}
+.btn{
+margin: 15px 15px 15px 15px;
+}
+.btn-1 {
+background:#1F568B;
+font-weight: 100;
+}
+.btn-1 svg {
+height: 45px;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
+.btn-1 rect {
+fill: none;
+stroke: #fff;
+stroke-width: 1;
+stroke-dasharray: 422, 0;
+}
+
+.btn-1:hover {
+background: rgba(225, 51, 45, 0);
+font-weight: 900;
+letter-spacing: 1px;
+}
+.btn-1:hover rect {
+stroke-width: 5;
+stroke-dasharray: 15, 310;
+stroke-dashoffset: 48;
+transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+p {
+font-size: 20px;
+}
+/*==Reset CSS==*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*==Style cơ bản cho website==*/
+  body {
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  /*==Style cho menu===*/
+  #menu ul {
+    background: #1F568B;
+    list-style-type: none;
+    text-align: center;
+  }
+  #menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+  }
+  #menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 25px;
+  }
+  #menu a:hover {
+    background: #F1F1F1;
+    color: #333;
+  }
+  .nav .sub-menu{
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+ 
+.nav li:hover>.sub-menu{
+    display: block;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="../static/colorpictures.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <title>Color Pictures</title>
+</head>
+<body>
+    <div id="menu">
+        <ul class="nav">
+            <li><a href="{{ url_for('home') }}">Homepage</a></li>
+            <li><a href="{{ url_for('full_category') }}">Start Coloring</a></li>           
+            {% if 'token' in session %}
+                <li><a href="{{ url_for('logout') }}">Log out</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    <section class="buttons">
+        <div class="container">            
+            <div id="tieu_de">
+                <h3 style="font-size: 40px; color:white">Xin chào {{ fullname }}!</h3>
+            </div> 
+            <div>
+                <a href="{{ url_for('profile', artist=session['token']) }}" class="btn btn-1">My Arts</a>
+            </div>     
+        </div>
+    </section>
+</body>
+</html>
