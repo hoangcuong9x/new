@@ -32,7 +32,7 @@
                     {% for pic in top100pics %}
                     <div class="item" id="{{pic.picpositionintop100}}">
                         <p style="color:red">{{ pic.picpositionintop100 }}</p>
-                        <h4     ; font-size:30px">{{ pic.picname }}</h4>
+                        <h4 style="font-size:30px">{{ pic.picname }}</h4>
                         <div>
                             <a href="{{ url_for('view', picid=pic.picid) }}">
                                 <img src="{{ pic.piclink }}" alt="" width="20%" height="20%">
