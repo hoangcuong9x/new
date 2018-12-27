@@ -12,6 +12,14 @@
     <title>{{ picname }}</title>
 </head>
 <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=2149867725329292&autoLogAppEvents=1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <div id="menu">
         <ul class="nav">
             <li><a href="{{ url_for('home') }}">Homepage</a></li>
@@ -55,8 +63,10 @@
                 <a href="{{ url_for('new_picture', picid=pic.picrawid) }}" target="_blank" class="btn btn-1">Color this raw picture</a>
             </div>
             <hr>
+            
             <p>Artist: <a style="text-decoration: none; color: black" href="{{ url_for('profile', artist=artist.username) }}">{{ artist.fullname }}</a></p>
             <p>Like: {{ piclikes }}</p>
+            <div class="fb-share-button" data-href="{{ url_for('view', picid=pic.picid) }}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcolor-pics.herokuapp.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
 
             <input id="warning" type="text" style="display:none" value="{{ warning }}">
             <form action="" method="POST" id="like">
